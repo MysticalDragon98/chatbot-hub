@@ -1,0 +1,11 @@
+{
+    "type": "angular",
+    "plugins": [
+        "semantic-ui"
+    ],
+    "options": {
+        "type": "angular",
+        "plugins": [],
+        "options": {}
+    }
+}

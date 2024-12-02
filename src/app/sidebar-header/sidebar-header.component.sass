@@ -1,0 +1,27 @@
+@import '../../styles/color-palette.sass'
+@import '../../styles/fonts.sass'
+
+$horizontal-padding: 16px
+
+.sidebar-header
+    background: $panel-header-background-color
+    width: calc(100%)
+    height: 100%
+    border-right: 1px solid $panel-header-border
+    align-items: center
+    padding-left: $horizontal-padding
+    padding-right: $horizontal-padding
+
+    display: grid
+    grid-template-columns: 40px 1fr
+
+.avatar
+    width: 40px
+    height: 40px
+    border-radius: 50%
+
+.name
+    width: 100%
+    text-align: right
+    font-size: 18px
+    color: $font-gray-color

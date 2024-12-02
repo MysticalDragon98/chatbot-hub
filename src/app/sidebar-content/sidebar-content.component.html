@@ -1,0 +1,7 @@
+<div class="sidebar-content">
+    <chat-preview
+        *ngFor="let chat of chats"
+        [chatPreview]="chat"
+        (onClick)="onChatPreviewClick($event)"
+    ></chat-preview>
+</div>

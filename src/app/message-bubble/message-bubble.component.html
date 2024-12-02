@@ -1,0 +1,11 @@
+<div [class]="'message-bubble ' + message.direction">
+    <text-message [message]="message" *ngIf="message.messageType === 'text'"></text-message>
+    <interactive-message [message]="message" *ngIf="message.messageType === 'interactive'"></interactive-message>
+    <location-message [message]="message" *ngIf="message.messageType === 'location'"></location-message>
+</div>
+
+<div [class]="'message-buttons ' + message.direction" *ngIf="message.buttons && message.buttons.length > 0">
+    <div class="message-button" *ngFor="let button of message.buttons">
+        {{button.content}}
+    </div>
+</div>

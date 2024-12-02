@@ -1,0 +1,5 @@
+<div class="interactive-message">
+    <div *ngIf="message.interactive!.type === 'button_reply'">
+        <i class="reply icon"></i> {{message.interactive!.button_reply!.title}}
+    </div>
+</div>

@@ -1,0 +1,16 @@
+<div class="chat-preview" (click)="onClickHandler(chatPreview)">
+    <div class="avatar">
+        {{chatPreview.icon}}
+    </div>
+    <div class="body">
+        <div class="header">
+            <div class="name">{{chatPreview.name}}</div>
+            <div class="state">
+                {{chatPreview.state}}
+            </div>
+        </div>
+        <div class="last-message" *ngIf="chatPreview.lastMessage.messageType === 'text'">
+            {{chatPreview.lastMessage.text!.body | stringPreview:40}}
+        </div>
+    </div>
+</div>

@@ -1,0 +1,36 @@
+@import '../../styles/color-palette.sass'
+    
+$radius: 7.5px
+
+.message-bubble
+    width: fit-content
+    border-radius: $radius
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1)
+    max-width: 40%
+
+.message-bubble.outgoing
+    background: $outgoing-message-bubble-background-color
+    padding: 6px 9px 8px 9px
+
+.message-bubble.incoming
+    background: $incoming-message-bubble-background-color
+    padding: 9px 9px 8px 9px
+
+.outgoing
+    align-self: flex-end
+    margin-left: auto
+
+.incoming
+    align-self: flex-start
+    margin-right: $avatar-background-color
+
+.message-buttons
+    width: 40%
+
+.message-button
+    background: $message-button-background-color
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1)
+    text-align: center
+    border-radius: $radius
+    margin-top: 5px
+    padding: 5px
